@@ -1,335 +1,372 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Francisco da Silva Neto - Portfólio</title>
-    
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-primary">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">
-                <span class="text-primary">Francisco</span> Neto
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                </ul>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-primary"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+          <span class="text-primary">Francisco</span> Neto
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section d-flex align-items-center justify-content-center">
-        <div class="container text-center">
-            <div class="hero-content">
-                <h1 class="display-4 fw-bold mb-3">
-                    Olá, sou <span class="text-primary">Francisco da Silva Neto</span>
-                </h1>
-                <p class="lead mb-4 text-light">
-                    Desenvolvedor Backend | Especialista em Python | AWS & DevOps
-                </p>
-                <p class="subtitle mb-5">
-                    Transformando dados em soluções escaláveis e eficientes
-                </p>
-                <div class="d-flex gap-3 justify-content-center flex-wrap">
-                    <a href="#projetos" class="btn btn-primary btn-lg">Ver Projetos</a>
-                    <a href="#contato" class="btn btn-outline-primary btn-lg">Entrar em Contato</a>
-                </div>
-            </div>
+    <section
+      id="home"
+      class="hero-section d-flex align-items-center justify-content-center"
+    >
+      <div class="container text-center">
+        <div class="hero-content">
+          <h1 class="display-4 fw-bold mb-3">
+            Olá, sou <span class="text-primary">Francisco da Silva Neto</span>
+          </h1>
+          <p class="lead mb-4 text-light">
+            Desenvolvedor Backend | Especialista em Python | AWS & DevOps
+          </p>
+          <p class="subtitle mb-5">
+            Transformando dados em soluções escaláveis e eficientes
+          </p>
+          <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="#projetos" class="btn btn-primary btn-lg">Ver Projetos</a>
+            <a href="#contato" class="btn btn-outline-primary btn-lg"
+              >Entrar em Contato</a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Sobre Mim -->
     <section id="sobre" class="py-5 bg-dark">
-        <div class="container">
-            <h2 class="section-title mb-5">Sobre Mim</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="about-content">
-                        <p class="text-light mb-3">
-                            Sou um desenvolvedor apaixonado por tecnologia com foco em <strong>Backend Development</strong>, 
-                            <strong>Data Engineering</strong> e <strong>DevOps</strong>. Com sólida experiência em Python, 
-                            tenho trabalhado em projetos que envolvem processamento de dados em larga escala, 
-                            automação e infraestrutura em nuvem.
-                        </p>
-                        <p class="text-light mb-3">
-                            Minha jornada profissional é marcada por um compromisso com a excelência técnica e 
-                            a busca contínua por aprendizado. Possuo proficiência em <strong>Inglês de Negócios</strong>, 
-                            o que me permite colaborar efetivamente em equipes internacionais e comunicar-me com clareza 
-                            em ambientes corporativos globais.
-                        </p>
-                        <p class="text-light">
-                            Estou em busca de oportunidades desafiadoras no mercado internacional, especialmente 
-                            no Japão, onde posso contribuir com minhas habilidades técnicas e crescer profissionalmente 
-                            em um ambiente inovador.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <h3 class="text-primary">Foco Principal</h3>
-                            <p>Backend Development & Data Engineering</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="text-primary">Tecnologias Cloud</h3>
-                            <p>Amazon Web Services (AWS)</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="text-primary">Idioma</h3>
-                            <p>Inglês de Negócios</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="text-primary">Objetivo</h3>
-                            <p>Oportunidades no Japão</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title mb-5">Sobre Mim</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="about-content">
+              <p class="text-light mb-3">
+                Sou um desenvolvedor apaixonado por tecnologia com foco em
+                <strong>Backend Development</strong>,
+                <strong>Engenharia de Software</strong> e
+                <strong>DevOps</strong>. Com experiência em Python, tenho
+                trabalhado em projetos que envolvem processamento de dados,
+                automação e infraestrutura em nuvem.
+              </p>
+              <p class="text-light mb-3">
+                Minha jornada profissional é marcada por um compromisso com a
+                excelência técnica e a busca contínua por aprendizado.
+              </p>
+              <p class="text-light">
+                Estou em busca de oportunidades desafiadoras no mercado, onde
+                posso contribuir com minhas habilidades técnicas e crescer
+                profissionalmente em um ambiente inovador.
+              </p>
             </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-stats">
+              <div class="stat-card">
+                <h3 class="text-primary">Foco Principal</h3>
+                <p>Desenvolvimento Back-End & Engenharia de Dados</p>
+              </div>
+              <div class="stat-card">
+                <h3 class="text-primary">Tecnologias Cloud</h3>
+                <p>Amazon Web Services (AWS)</p>
+              </div>
+              <div class="stat-card">
+                <h3 class="text-primary">Idioma</h3>
+                <p>Inglês Intermediário</p>
+              </div>
+              <div class="stat-card">
+                <h3 class="text-primary">Objetivo</h3>
+                <p>Oportunidades desafiadoras</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Habilidades -->
     <section id="habilidades" class="py-5 bg-darker">
-        <div class="container">
-            <h2 class="section-title mb-5">Habilidades Técnicas</h2>
-            <div class="row">
-                <!-- Linguagens de Programação -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h4>Linguagens</h4>
-                        <ul class="skill-list">
-                            <li>Python</li>
-                            <li>SQL</li>
-                            <li>JavaScript</li>
-                            <li>Bash/Shell</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Backend & Frameworks -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h4>Backend & Frameworks</h4>
-                        <ul class="skill-list">
-                            <li>FastAPI</li>
-                            <li>Django</li>
-                            <li>Flask</li>
-                            <li>REST APIs</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Cloud & DevOps -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h4>Cloud & DevOps</h4>
-                        <ul class="skill-list">
-                            <li>AWS (EC2, S3, Lambda)</li>
-                            <li>Docker</li>
-                            <li>CI/CD</li>
-                            <li>Linux</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Data & Databases -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h4>Dados & Bancos</h4>
-                        <ul class="skill-list">
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                            <li>Redis</li>
-                            <li>Data Processing</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Tools & Platforms -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h4>Ferramentas</h4>
-                        <ul class="skill-list">
-                            <li>Git & GitHub</li>
-                            <li>VS Code</li>
-                            <li>Postman</li>
-                            <li>Jira</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Soft Skills -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4>Soft Skills</h4>
-                        <ul class="skill-list">
-                            <li>Comunicação</li>
-                            <li>Trabalho em Equipe</li>
-                            <li>Problem Solving</li>
-                            <li>Inglês de Negócios</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title mb-5">Habilidades Técnicas</h2>
+        <div class="row">
+          <!-- Linguagens de Programação -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Linguagens</h4>
+              <ul class="skill-list">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>Bash/Shell</li>
+              </ul>
             </div>
+          </div>
+
+          <!-- Backend & Frameworks -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h4>Backend & Frameworks</h4>
+              <ul class="skill-list">
+                <li>FastAPI</li>
+                <li>Django</li>
+                <li>REST APIs</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h4>Cloud & DevOps</h4>
+              <ul class="skill-list">
+                <li>AWS (EC2, S3, Lambda)</li>
+                <li>CI/CD</li>
+                <li>Linux</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Data & Databases -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4>Dados & Bancos</h4>
+              <ul class="skill-list">
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Data Processing</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h4>Ferramentas</h4>
+              <ul class="skill-list">
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>Jira</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Soft Skills</h4>
+              <ul class="skill-list">
+                <li>Comunicação</li>
+                <li>Trabalho em Equipe</li>
+                <li>Problem Solving</li>
+                <li>Inglês Intermediário</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projetos -->
     <section id="projetos" class="py-5 bg-dark">
-        <div class="container">
-            <h2 class="section-title mb-5">Projetos em Destaque</h2>
-            <div class="row">
-                <!-- Projeto 1 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>Scraper de Dados com Python</h3>
-                            <span class="badge bg-primary">Python</span>
-                            <span class="badge bg-info">Web Scraping</span>
-                        </div>
-                        <div class="project-body">
-                            <p>
-                                Desenvolvedor de uma aplicação robusta de web scraping em Python que coleta, 
-                                processa e armazena dados de múltiplas fontes. O projeto utiliza técnicas avançadas 
-                                de tratamento de dados e implementa boas práticas de performance e escalabilidade.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">BeautifulSoup</span>
-                                <span class="tech-tag">Requests</span>
-                                <span class="tech-tag">Pandas</span>
-                            </div>
-                        </div>
-                        <div class="project-footer">
-                            <a href="#" class="btn btn-sm btn-primary">
-                                <i class="fab fa-github"></i> Ver no GitHub
-                            </a>
-                            <a href="#" class="btn btn-sm btn-outline-primary">
-                                <i class="fas fa-external-link-alt"></i> Saiba Mais
-                            </a>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title mb-5">Projetos em Destaque</h2>
+        <div class="row">
+          <!-- Projeto 1 -->
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Scraper de Dados com Python</h3>
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-info">Web Scraping</span>
+              </div>
+              <div class="project-body">
+                <p>
+                  Desenvolvedor de uma aplicação robusta de web scraping em
+                  Python que coleta, processa e armazena dados de múltiplas
+                  fontes. O projeto utiliza técnicas avançadas de tratamento de
+                  dados e implementa boas práticas de performance e
+                  escalabilidade.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">BeautifulSoup</span>
+                  <span class="tech-tag">Requests</span>
+                  <span class="tech-tag">Pandas</span>
                 </div>
-
-                <!-- Projeto 2 - Placeholder -->
-                <div class="col-lg-6 mb-4">
-                    <div class="project-card placeholder-card">
-                        <div class="project-header">
-                            <h3>Próximo Projeto</h3>
-                            <span class="badge bg-secondary">Em Breve</span>
-                        </div>
-                        <div class="project-body">
-                            <p>
-                                Espaço reservado para seus próximos projetos. Atualize este portfólio 
-                                com seus novos desenvolvimentos e conquistas profissionais.
-                            </p>
-                            <div class="text-center mt-4">
-                                <i class="fas fa-plus-circle fa-3x text-muted"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="project-footer">
+                <a
+                  href="https://github.com/FranciscooNeto/Scraper-de-Dados-com-Python"
+                  class="btn btn-sm btn-primary"
+                >
+                  <i class="fab fa-github"></i> Ver no GitHub
+                </a>
+                <a
+                  href="https://github.com/FranciscooNeto/Scraper-de-Dados-com-Python/blob/main/README.md"
+                  class="btn btn-sm btn-outline-primary"
+                >
+                  <i class="fas fa-external-link-alt"></i> Saiba Mais
+                </a>
+              </div>
             </div>
+          </div>
+
+          <!-- Projeto 2 - Placeholder -->
+          <div class="col-lg-6 mb-4">
+            <div class="project-card placeholder-card">
+              <div class="project-header">
+                <h3>Próximo Projeto</h3>
+                <span class="badge bg-secondary">Em Breve</span>
+              </div>
+              <div class="project-body">
+                <p>
+                  Espaço reservado para seus próximos projetos. Atualize este
+                  portfólio com seus novos desenvolvimentos e conquistas
+                  profissionais.
+                </p>
+                <div class="text-center mt-4">
+                  <i class="fas fa-plus-circle fa-3x text-muted"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contato -->
     <section id="contato" class="py-5 bg-darker">
-        <div class="container">
-            <h2 class="section-title mb-5">Entre em Contato</h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <p class="text-center text-light mb-5">
-                        Estou aberto a novas oportunidades e desafios. Sinta-se à vontade para entrar em contato 
-                        através dos canais abaixo.
-                    </p>
-                    <div class="contact-methods">
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-info">
-                                <h5>Email</h5>
-                                <a href="mailto:franciscodsnetoo@gmail.com">franciscodsnetoo@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div class="contact-info">
-                                <h5>LinkedIn</h5>
-                                <a href="https://www.linkedin.com/in/franciscodasneto/" target="_blank">
-                                    linkedin.com/in/franciscodasneto
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="contact-info">
-                                <h5>GitHub</h5>
-                                <a href="https://github.com/FranciscooNeto" target="_blank">
-                                    github.com/FranciscooNeto
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center mt-5">
-                        <p class="text-muted small">
-                            © 2024 Francisco da Silva Neto. Todos os direitos reservados.
-                        </p>
-                    </div>
+      <div class="container">
+        <h2 class="section-title mb-5">Entre em Contato</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <p class="text-center text-light mb-5">
+              Estou aberto a novas oportunidades e desafios. Sinta-se à vontade
+              para entrar em contato através dos canais abaixo.
+            </p>
+            <div class="contact-methods">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
                 </div>
+                <div class="contact-info">
+                  <h5>Email</h5>
+                  <a href="mailto:franciscodsnetoo@gmail.com"
+                    >franciscodsnetoo@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="contact-info">
+                  <h5>LinkedIn</h5>
+                  <a
+                    href="https://www.linkedin.com/in/franciscodasneto/"
+                    target="_blank"
+                  >
+                    linkedin.com/in/franciscodasneto
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="contact-info">
+                  <h5>GitHub</h5>
+                  <a href="https://github.com/FranciscooNeto" target="_blank">
+                    github.com/FranciscooNeto
+                  </a>
+                </div>
+              </div>
             </div>
+
+            <div class="text-center mt-5">
+              <p class="text-muted small">
+                © 2024 Francisco da Silva Neto. Todos os direitos reservados.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Custom JS -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
