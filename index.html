@@ -1,180 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfólio — Francisco Neto</title>
 
-    <!-- Estilo moderno -->
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #f5f7fa;
-            color: #333;
-        }
+      :root{
+        --primary:#1f6feb;
+        --primary-dark:#1455b0;
+        --muted:#6c757d;
+      }
 
-        header {
-            background: #1f6feb;
-            padding: 40px 20px;
-            text-align: center;
-            color: white;
-        }
+      body{
+        font-family: "Segoe UI", system-ui, -apple-system, "Segoe UI Emoji", Arial, sans-serif;
+        background: linear-gradient(180deg,#f7f9fc 0%, #eef3fb 100%);
+        color:#222;
+        padding-top:72px; /* espaço para navbar fixa */
+      }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+      .navbar-brand {
+        font-weight:700;
+        letter-spacing:0.2px;
+      }
 
-        header p {
-            margin-top: 10px;
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
+      .hero{
+        background: linear-gradient(90deg, rgba(31,111,235,0.95), rgba(20,85,176,0.95));
+        color:#fff;
+        border-radius: .75rem;
+        padding: 3rem 1.5rem;
+        box-shadow: 0 8px 30px rgba(31,111,235,0.12);
+      }
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+      .hero h1{ font-size:2.25rem; margin-bottom:.5rem; }
+      .hero p{ opacity:0.95; margin-bottom:1rem; }
 
-        h2 {
-            margin-bottom: 20px;
-            color: #1f6feb;
-            border-left: 6px solid #1f6feb;
-            padding-left: 10px;
-        }
+      .section-title{
+        color: var(--primary);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:.5rem;
+        font-weight:600;
+        margin-bottom:1rem;
+      }
 
-        .card {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-            transition: 0.3s;
-        }
+      .card-project{
+        border:0;
+        border-radius:.75rem;
+        box-shadow: 0 6px 22px rgba(22,45,80,0.06);
+        transition: transform .18s ease, box-shadow .18s ease;
+      }
+      .card-project:hover{ transform: translateY(-6px); box-shadow:0 18px 40px rgba(22,45,80,0.08); }
 
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-        }
+      footer{ color:var(--muted); padding:2rem 0; }
 
-        .project-title {
-            margin: 0;
-            font-size: 1.4rem;
-            color: #222;
-        }
-
-        .project-description {
-            margin: 10px 0;
-            line-height: 1.5;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 16px;
-            background: #1f6feb;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #1455b0;
-        }
-
-        .title-sobre-mim {
-            display: flex;
-            /* flex inicialmente sempre */
-            justify-content: center;
-            /* centraliza horizontalmente */
-            align-items: center;
-            /* centraliza verticalmente, se houver ícones */
-            text-align: center;
-            width: 100%;
-
-            /* sobrescreve o estilo geral aplicado a h2 (border-left e padding) */
-            border-left: none;
-            padding-left: 0;
-        }
-
-        .title-projetos {
-            display: flex;
-            /* flex inicialmente sempre */
-            justify-content: center;
-            /* centraliza horizontalmente */
-            align-items: center;
-            /* centraliza verticalmente, se houver ícones */
-            text-align: center;
-            width: 100%;
-
-            /* sobrescreve o estilo geral aplicado a h2 (border-left e padding) */
-            border-left: none;
-            padding-left: 0;
-        }
-
-        footer {
-            text-align: center;
-            margin: 50px 0 20px;
-            color: #666;
-        }
+      @media (min-width: 992px){
+        .hero h1{ font-size:2.75rem; }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Francisco Neto</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Cabeçalho -->
-    <header>
-        <h1>Francisco Neto</h1>
-        <p>Desenvolvedor Python • Web Scraping • Automação & Back-End</p>
-    </header>
-
-    <!-- Conteúdo -->
-    <div class="container">
-
-        <!-- Sobre mim -->
-        <h2 class="title-sobre-mim">👤 Sobre Mim</h2>
-        <div class="card">
-            <p>Sou um desenvolvedor em formação com foco em Python, automação, análise de dados e soluções práticas.
-                Gosto de transformar problemas em código e criar projetos úteis para o mundo real.
-
-                Estou construindo meu portfólio com projetos sólidos utilizando Web Scraping, APIs, bancos de dados e
-                boas práticas de programação.</p>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            <li class="nav-item ms-2">
+              <a class="btn btn-sm btn-primary" href="https://github.com/FranciscooNeto" target="_blank">GitHub</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
 
-        <!-- Projetos -->
-        <h2 class="title-projetos">🚀 Projetos</h2>
+    <main class="container my-4">
+      <!-- Hero -->
+      <section class="hero mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h1>Desenvolvedor Python • Web Scraping • Automação & Back-End</h1>
+            <p>Crio soluções robustas com Python, web scraping, automação e integração com bancos de dados. Aqui estão alguns projetos e maneiras de entrar em contato.</p>
+            <div class="d-flex gap-2">
+              <a class="btn btn-light btn-lg" href="#projetos">Ver Projetos</a>
+              <a class="btn btn-outline-light btn-lg" href="https://github.com/FranciscooNeto/Scraper-de-Dados-com-Python" target="_blank">Scraper no GitHub</a>
+            </div>
+          </div>
 
-        <div class="card">
-            <h3 class="project-title">Scraper de Dados com Python</h3>
-            <p class="project-description">
-                Um projeto completo de Web Scraping utilizando Requests + BeautifulSoup para coletar dados de páginas da
-                web e armazenar tudo em um banco local SQLite.
-                Foi desenvolvido com foco em boas práticas e estrutura organizada.
-            </p>
-            <a class="btn" href="https://github.com/FranciscooNeto/Scraper-de-Dados-com-Python" target="_blank">Ver no
-                GitHub</a>
+          <div class="col-md-4 text-center mt-3 mt-md-0">
+            <!-- Placeholder para imagem/avatar -->
+            <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width:120px;height:120px;box-shadow:0 8px 20px rgba(0,0,0,0.08);">
+              <span style="color:var(--primary);font-weight:700;font-size:1.25rem" >
+                
+              </span>
+              <img src="https://media.licdn.com/dms/image/v2/D4D03AQFxz10o3nzkQQ/profile-displayphoto-shrink_200_200/B4DZadxg.0GcAc-/0/1746403726207?e=1766016000&v=beta&t=JguOKmNeuML3Qw7h4e7xxQUKviuZkuhAj1n_iWZVcBo" alt="wad">
+            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- Adicione novos projetos aqui -->
-        <!-- Copiar e colar mais blocos <div class="card"> ... </div>  -->
-
-        <!-- Contato -->
-        <h2>📬 Contato</h2>
-        <div class="card">
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/franciscodasneto/" target="_blank">Clique
-                    aqui</a></p>
-            <p><strong>Email:</strong> franciscodsnetoo@gmail.com</p>
+      <!-- Sobre -->
+      <section id="sobre" class="mb-5">
+        <h2 class="section-title">👤 Sobre Mim</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="card p-4">
+              <p class="mb-0">
+                Sou um desenvolvedor em formação com foco em Python, automação, análise de dados e soluções práticas. Gosto de transformar problemas em código e criar projetos úteis para o mundo real.
+                Estou construindo meu portfólio com projetos sólidos utilizando Web Scraping, APIs, bancos de dados e boas práticas de programação.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- Projetos -->
+      <section id="projetos" class="mb-5">
+        <h2 class="section-title">🚀 Projetos</h2>
+
+        <div class="row g-4">
+          <!-- Projeto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-project h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Scraper de Dados com Python</h5>
+                <p class="card-text text-muted mb-4">Web Scraping com Requests e BeautifulSoup, salvando em SQLite. Estrutura pensada para reutilização e boas práticas.</p>
+                <div class="mt-auto">
+                  <a class="btn btn-sm btn-primary" href="https://github.com/FranciscooNeto/Scraper-de-Dados-com-Python" target="_blank">Ver no GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exemplo de cartão vazio para novos projetos -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-project h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Projeto Futuro</h5>
+                <p class="card-text text-muted mb-4">Adicione novos projetos aqui com uma descrição curta e link para repositório ou demo.</p>
+                <div class="mt-auto">
+                  <a class="btn btn-sm btn-outline-primary" href="#" tabindex="-1">Em breve</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adicione mais cards conforme necessário -->
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="mb-5">
+        <h2 class="section-title">📬 Contato</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card p-3">
+      <!-- Adicione novos projetos aqui -->
+      <!-- Copiar e colar mais blocos <div class="card"> ... </div>  -->
+
+      <!-- Contato -->
+      <h2>📬 Contato</h2>
+      <div class="card">
+        <p>
+          <strong>LinkedIn:</strong>
+          <a
+            href="https://www.linkedin.com/in/franciscodasneto/"
+            target="_blank"
+            >Clique aqui</a
+          >
+        </p>
+        <p><strong>Email:</strong> franciscodsnetoo@gmail.com</p>
+      </div>
     </div>
 
-    <footer>
-        &copy; 2025 - Desenvolvido por Francisco Neto.
-    </footer>
-
-</body>
-
+    <footer>&copy; 2025 - Desenvolvido por Francisco Neto.</footer>
+  </body>
 </html>
