@@ -3,41 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Francisco Neto</title>
+    <title>Portfólio — Francisco Neto</title>
+
+    <!-- Estilo moderno -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: auto;
-            padding: 40px;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
         }
-        h1 {
-            color: #1f6feb;
+
+        header {
+            background: #1f6feb;
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
         }
-        a {
-            color: #1f6feb;
-            font-weight: bold;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
-        .project {
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
             margin-bottom: 20px;
+            color: #1f6feb;
+            border-left: 6px solid #1f6feb;
+            padding-left: 10px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+        }
+
+        .project-title {
+            margin: 0;
+            font-size: 1.4rem;
+            color: #222;
+        }
+
+        .project-description {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 16px;
+            background: #1f6feb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1455b0;
+        }
+
+        footer {
+            text-align: center;
+            margin: 50px 0 20px;
+            color: #666;
         }
     </style>
 </head>
+
 <body>
-    <h1>Olá, eu sou o Francisco 👋</h1>
-    <p>Bem-vindo ao meu portfólio! Aqui você encontra meus projetos de programação.</p>
 
-    <h2>🚀 Projetos</h2>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Francisco Neto</h1>
+        <p>Desenvolvedor Python • Web Scraping • Automação & Back-End</p>
+    </header>
 
-    <div class="project">
-        <h3>Scraper de Dados com Python</h3>
-        <p>Um projeto de Web Scraping utilizando Requests, BeautifulSoup e SQLite.</p>
-        <a href="https://github.com/FranciscooNeto/Scraper-de-Dados-com-Python" target="_blank">🔗 Acessar no GitHub</a>
+    <!-- Conteúdo -->
+    <div class="container">
+
+        <!-- Sobre mim -->
+        <h2>👤 Sobre Mim</h2>
+        <div class="card">
+            <p>Sou um desenvolvedor em formação com foco em Python, automação, análise de dados e soluções práticas. Gosto de transformar problemas em código e criar projetos úteis para o mundo real.
+
+            Estou construindo meu portfólio com projetos sólidos utilizando Web Scraping, APIs, bancos de dados e boas práticas de programação.</p>
+        </div>
+
+        <!-- Projetos -->
+        <h2>🚀 Projetos</h2>
+
+        <div class="card">
+            <h3 class="project-title">Scraper de Dados com Python</h3>
+            <p class="project-description">
+                Um projeto completo de Web Scraping utilizando Requests + BeautifulSoup para coletar dados de páginas da web e armazenar tudo em um banco local SQLite.
+                Foi desenvolvido com foco em boas práticas e estrutura organizada.
+            </p>
+            <a class="btn" href="https://github.com/FranciscooNeto/Scraper-de-Dados-com-Python" target="_blank">Ver no GitHub</a>
+        </div>
+
+        <!-- Adicione novos projetos aqui -->
+        <!-- Copiar e colar mais blocos <div class="card"> ... </div>  -->
+
+        <!-- Contato -->
+        <h2>📬 Contato</h2>
+        <div class="card">
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/SEU-LINK" target="_blank">Clique aqui</a></p>
+            <p><strong>Email:</strong> SEU-EMAIL</p>
+        </div>
     </div>
 
-    <h2>📬 Contato</h2>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/seu-link" target="_blank">Meu LinkedIn</a></p>
-    <p>Email: seuemail@example.com</p>
+    <footer>
+        &copy; 2025 - Desenvolvido por Francisco Neto.
+    </footer>
+
 </body>
 </html>
