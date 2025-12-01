@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,13 +52,13 @@
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
             transition: 0.3s;
         }
 
         .card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
         }
 
         .project-title {
@@ -85,6 +86,36 @@
             background: #1455b0;
         }
 
+        .title-sobre-mim {
+            display: flex;
+            /* flex inicialmente sempre */
+            justify-content: center;
+            /* centraliza horizontalmente */
+            align-items: center;
+            /* centraliza verticalmente, se houver ícones */
+            text-align: center;
+            width: 100%;
+
+            /* sobrescreve o estilo geral aplicado a h2 (border-left e padding) */
+            border-left: none;
+            padding-left: 0;
+        }
+
+        .title-projetos {
+            display: flex;
+            /* flex inicialmente sempre */
+            justify-content: center;
+            /* centraliza horizontalmente */
+            align-items: center;
+            /* centraliza verticalmente, se houver ícones */
+            text-align: center;
+            width: 100%;
+
+            /* sobrescreve o estilo geral aplicado a h2 (border-left e padding) */
+            border-left: none;
+            padding-left: 0;
+        }
+
         footer {
             text-align: center;
             margin: 50px 0 20px;
@@ -105,23 +136,27 @@
     <div class="container">
 
         <!-- Sobre mim -->
-        <h2>👤 Sobre Mim</h2>
+        <h2 class="title-sobre-mim">👤 Sobre Mim</h2>
         <div class="card">
-            <p>Sou um desenvolvedor em formação com foco em Python, automação, análise de dados e soluções práticas. Gosto de transformar problemas em código e criar projetos úteis para o mundo real.
+            <p>Sou um desenvolvedor em formação com foco em Python, automação, análise de dados e soluções práticas.
+                Gosto de transformar problemas em código e criar projetos úteis para o mundo real.
 
-            Estou construindo meu portfólio com projetos sólidos utilizando Web Scraping, APIs, bancos de dados e boas práticas de programação.</p>
+                Estou construindo meu portfólio com projetos sólidos utilizando Web Scraping, APIs, bancos de dados e
+                boas práticas de programação.</p>
         </div>
 
         <!-- Projetos -->
-        <h2>🚀 Projetos</h2>
+        <h2 class="title-projetos">🚀 Projetos</h2>
 
         <div class="card">
             <h3 class="project-title">Scraper de Dados com Python</h3>
             <p class="project-description">
-                Um projeto completo de Web Scraping utilizando Requests + BeautifulSoup para coletar dados de páginas da web e armazenar tudo em um banco local SQLite.
+                Um projeto completo de Web Scraping utilizando Requests + BeautifulSoup para coletar dados de páginas da
+                web e armazenar tudo em um banco local SQLite.
                 Foi desenvolvido com foco em boas práticas e estrutura organizada.
             </p>
-            <a class="btn" href="https://github.com/FranciscooNeto/Scraper-de-Dados-com-Python" target="_blank">Ver no GitHub</a>
+            <a class="btn" href="https://github.com/FranciscooNeto/Scraper-de-Dados-com-Python" target="_blank">Ver no
+                GitHub</a>
         </div>
 
         <!-- Adicione novos projetos aqui -->
@@ -130,7 +165,8 @@
         <!-- Contato -->
         <h2>📬 Contato</h2>
         <div class="card">
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/franciscodasneto/" target="_blank">Clique aqui</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/franciscodasneto/" target="_blank">Clique
+                    aqui</a></p>
             <p><strong>Email:</strong> franciscodsnetoo@gmail.com</p>
         </div>
     </div>
@@ -140,4 +176,5 @@
     </footer>
 
 </body>
+
 </html>
